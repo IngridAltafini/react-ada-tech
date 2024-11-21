@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aula 04 - CSS</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header></header>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <main>
-    <h1 class="title">Exercício 04 - CSS</h1>
-    
-    <section id="principais-estilos">
-      <h2>Principais estilhos CSS</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a class="nav-brand" href="#">Ingrid Altafini</a>
 
-      <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit at felis tristique, ac consectetur est lacinia. Sed vel ligula at justo fringilla varius. Sed facilisis, mauris id tincidunt congue, lectus nunc bibendum arcu, vel mattis enim metus ut lectus.</p>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#">Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <p class="paragrafo">Nullam auctor, arcu vel consectetur imperdiet, ipsum mauris rutrum velit, et bibendum nunc eros non velit. Integer nec nisi vel metus posuere vestibulum. Nulla facilisi. Nulla facilisi.</p>
+    <main>
+      <section id="banner">
+        <div class="banner-content">
+          <h1 class="banner-content-title">Ingrid Isabela Altafini</h1>
+          <p class="banner-content-subtitle">Desenvolvedora FullStack</p>
+          <button class="banner-content-btn">Baixar CV</button>
+        </div>
 
-      <p>Outro paragrafo</p>
-    </section>
+        <img
+          src="https://avatars.githubusercontent.com/u/99375119?v=4"
+          alt="ingrid"
+          class="banner-image"
+        />
+      </section>
 
-    <section id="flexbox">
-      <h2>Flexbox</h2>
+      <section id="posts">
+        <div class="posts-content">
+          <div class="posts-content-header">
+            Recent Posts
+            <h2 class="section-title"></h2>
+            <a href="#" class="view-all-link">view all</a>
+          </div>
 
-      <div class="container">
-        <div class="box"></div>
-        <div class="box-2"></div>
-        <div class="box"></div>
-        <div class="box-2"></div>
-      </div>
-    </section>
+          <div class="posts-cards">
+            <div class="post-card">
+              <h3>Backend Junior</h3>
+              <span>Outubro 2023</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque debitis voluptatem, facilis delectus, nulla est
+                reiciendis sunt cupiditate enim repellendus tenetur? Est quas
+                ullam distinctio minus tempore dicta ratione magni.
+              </p>
+            </div>
 
-    <section id="grid-layout">
-      <div class="container-grid">
-        <div class="caixa"></div>
-        <div class="caixa"></div>
-        <div class="caixa"></div>
-        <div class="caixa"></div>
-        <div class="caixa"></div>
-        <div class="caixa"></div>
-      </div>
-    </section>
-  </main>
+            <div class="post-card">
+              <h3>Backend Pleno</h3>
+              <span>Outubro 2023</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque debitis voluptatem, facilis delectus, nulla est
+                reiciendis sunt cupiditate enim repellendus tenetur? Est quas
+                ullam distinctio minus tempore dicta ratione magni.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer></footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
